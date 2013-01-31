@@ -1,7 +1,46 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  background-color: #fafafa;
+}
+
 div, section, header, footer, ul, ol, li {
   display: block;
   position: relative;
 }
 
 #Mineral {
+  width: 960px;
+  margin: 1em auto;
+}
+
+#Mineral > footer,
+#Mineral > section {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 6px #efefef;
+  overflow: hidden;
+}
+
+#Mineral > footer {
+  background-image: url(/images/rockywall_@2X.png);
+  background-size: 500px 500px;
+  color: #fafafa;
+  text-shadow: 0 0 4px #bbb;
+  margin-top: 1em;
+}
+
+#Mineral > footer > h1 {
+  margin: 0.5em 1em;
+}
+
+#Map {
+  margin-top: 1em;
+  height: 480px;
+}
+
+#mcmap {
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
 }
