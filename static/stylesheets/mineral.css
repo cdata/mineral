@@ -2,11 +2,14 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
   background-color: #fafafa;
+  color: #333;
 }
 
 div, section, header, footer, ul, ol, li {
   display: block;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 #Mineral {
@@ -39,8 +42,86 @@ div, section, header, footer, ul, ol, li {
   height: 480px;
 }
 
+#Mineral > section#Players {
+  border: 0;
+  padding-bottom: 1em;
+  box-shadow: none;
+}
+
+#Players li {
+  display: inline-block;
+  padding: 0.25em;
+  margin-right: 0.5em;
+  font-size: 0.75em;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #eee;
+  color: #aaa;
+}
+
+#Players li.online {
+  border-color: #72d116;
+  background: #dcfa9b;
+  color: #72d116;
+}
+
 #mcmap {
   height: 100%;
   border-radius: 4px;
   overflow: hidden;
+}
+
+#Chat {
+  font-size: 0.85em;
+  background: #f6f6f6;
+  overflow: hidden;
+}
+
+#Chat .log {
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 5em;
+}
+
+#Chat .log li {
+  font-family: Courier;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+  padding: 0.5em;
+  color: #888;
+}
+
+#Chat .log li .date {
+  display: block;
+  color: #ddd;
+  float: right;
+}
+
+#Chat .input {
+  height: 3em;
+  border-top: 1px solid #ddd;
+}
+
+#Chat .input input {
+  display: block;
+  position: absolute;
+  padding: 1em;
+  border: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+}
+
+#Chat .input input:focus {
+  outline: none;
+  background-color: #fcfcfc;
+}
+
+@media (max-width: 960px) {
+  #Mineral {
+    width: 100%;
+    margin: 1em 0;
+  }
 }

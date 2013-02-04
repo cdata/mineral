@@ -7,7 +7,8 @@ requirejs.config({
     'backbone': 'support/backbone',
     'q': 'support/q',
     'handlebars': 'support/handlebars',
-    'overviewer': 'support/overviewer'
+    'overviewer': 'support/overviewer',
+    'io': '/socket.io/socket.io'
   },
   shim: {
     'backbone': {
